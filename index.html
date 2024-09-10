@@ -8,7 +8,7 @@
   </head>
   <body>
     <div id="loader-wrapper">
-      <svg id="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+      <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
         <path
           id="ice-cream-scoop"
           d="M50 15 C20 15 20 50 20 50 C20 75 35 85 50 85 C65 85 80 75 80 50 C80 50 80 15 50 15 Z"
@@ -159,7 +159,7 @@
         <section id="hero">
           <div class="container">
             <div class="hero-content">
-              <h1>Dégustez la Crème des Glaces</h1>
+              <h1>Dégustez la Crème des Glaces.</h1>
               <p>
                 Adieu les produits laitiers et adaptogènes sucrés, place à une
                 nouvelle pureté.
@@ -238,6 +238,63 @@
         </div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-left">
+          <h3>Toi aussi devient crémeux</h3>
+          <p>Attrape les exclusivités !</p>
+          <div class="input-wrapper">
+            <input type="email" placeholder="Votre email" />
+            <button class="subscribe-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="footer-center">
+          <div class="logo-container">
+            <svg
+              class="loader"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 100 100"
+            >
+              <path
+                id="ice-cream-scoop"
+                d="M50 15 C20 15 20 50 20 50 C20 75 35 85 50 85 C65 85 80 75 80 50 C80 50 80 15 50 15 Z"
+                fill="var(--secondary-color)"
+              />
+              <path
+                id="stick"
+                d="M50 85 L50 100"
+                stroke="var(--secondary-color)"
+                stroke-width="10"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p>
+            Tout le monde adore la glace, mais bizarrement, personne ne fait un
+            sprint quand le cornet est servi.
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 
   <script src="assets/js/index.js"></script>
