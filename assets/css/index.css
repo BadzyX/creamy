@@ -22,7 +22,10 @@ body {
   box-sizing: border-box;
   background-color: var(--secondary-color);
   font-family: "Milligram Trial", sans-serif;
-  overflow-x: hidden;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 #loader-wrapper {
@@ -67,7 +70,7 @@ body {
 }
 
 header {
-  padding: 30px 210px;
+  padding: 2vh 5vw;
 }
 
 header .container {
@@ -75,7 +78,7 @@ header .container {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #4f3324;
-  padding-bottom: 30px;
+  padding-bottom: 2vh;
   max-width: 100%;
   padding-left: 0;
   padding-right: 0;
@@ -160,10 +163,13 @@ header .hamburger-menu {
 .hero-section {
   background-color: var(--primary-color);
   color: white;
-  padding-bottom: 50px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 #hero .container {
+  flex-grow: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -171,7 +177,7 @@ header .hamburger-menu {
 
 .hero-content {
   flex: 1;
-  max-width: 23%;
+  max-width: 30%;
 }
 
 .hero-image {
@@ -183,23 +189,23 @@ header .hamburger-menu {
 #hero h1 {
   font-family: "Kangmas", sans-serif;
   font-weight: 400;
-  font-size: 64px;
+  font-size: 4vw;
   margin-bottom: 20px;
 }
 
 #hero p {
-  font-size: 16px;
+  font-size: 1vw;
   line-height: 1.5;
-  margin-bottom: 30px;
+  margin-bottom: 2vh;
 }
 
 #hero button {
   background-color: var(--secondary-color);
   color: var(--tertiary-color);
   border: 2px solid #291012;
-  padding: 20px 80px;
+  padding: 1.5vh 4vw;
   font-family: "Kangmas", sans-serif;
-  font-size: 24px;
+  font-size: 1.5vw;
   cursor: pointer;
   border-radius: 100px / 50px;
   position: relative;
@@ -240,7 +246,7 @@ header .hamburger-menu {
 
 .curved-section-wrapper {
   position: relative;
-  height: 150px;
+  height: 10vh;
   overflow: visible;
   margin-bottom: 0;
 }
@@ -373,32 +379,37 @@ header .hamburger-menu {
 footer {
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  position: relative;
+  padding: 2vh 0;
+  z-index: 10;
 }
 
 footer .container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
 footer .footer-left,
 footer .footer-center,
 footer .footer-right {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 footer .footer-left h3 {
   font-family: "Kangmas", sans-serif;
-  font-size: 28px;
+  font-size: 1.5vw;
   font-weight: 400;
   margin-bottom: 10px;
   color: var(--tertiary-color);
 }
 
 footer .footer-left p {
-  font-size: 16px;
+  font-size: 1vw;
   font-weight: 500;
   margin-bottom: 20px;
   color: var(--tertiary-color);
@@ -454,8 +465,8 @@ footer .footer-center {
 }
 
 footer .footer-center .logo-container {
-  width: 150px;
-  height: 150px;
+  width: 15vh;
+  height: 15vh;
   background-color: var(--primary-color);
   border: 1px solid #96725c;
   border-radius: 100px;
