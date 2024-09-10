@@ -66,11 +66,11 @@ body {
 .container {
   max-width: calc(100% - 100px);
   margin: 0 auto;
-  padding: 0 5vw;
+  padding: 0 17vw;
 }
 
 header {
-  padding: 2vh 5vw;
+  padding: 2vh 17vw;
 }
 
 header .container {
@@ -379,8 +379,8 @@ header .hamburger-menu {
 footer {
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  padding: 2vh 0;
-  z-index: 2;
+  padding: 1vh 0;
+  z-index: 1;
 }
 
 footer .container {
