@@ -44,7 +44,7 @@ body {
   clip-path: circle(0% at 50% 50%);
 }
 
-#loader {
+.loader {
   width: 100px;
   height: 100px;
   animation: melt 2s ease-in-out infinite;
@@ -63,11 +63,11 @@ body {
 .container {
   max-width: calc(100% - 100px);
   margin: 0 auto;
-  padding: 0 150px;
+  padding: 0 210px;
 }
 
 header {
-  padding: 30px 150px;
+  padding: 30px 210px;
 }
 
 header .container {
@@ -242,6 +242,7 @@ header .hamburger-menu {
   position: relative;
   height: 150px;
   overflow: visible;
+  margin-bottom: 0;
 }
 
 .curved-section {
@@ -367,4 +368,107 @@ header .hamburger-menu {
   to {
     transform: translateX(50%) rotateY(-45deg) translateZ(-300px);
   }
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  position: relative;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+footer .footer-left,
+footer .footer-center,
+footer .footer-right {
+  flex: 1;
+}
+
+footer .footer-left h3 {
+  font-family: "Kangmas", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: var(--tertiary-color);
+}
+
+footer .footer-left p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: var(--tertiary-color);
+}
+
+footer .input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+footer .input-wrapper input {
+  width: 100%;
+  padding: 15px 90px 15px 20px;
+  border-radius: 50px;
+  border: 1px solid var(--tertiary-color);
+  font-family: "Kangmas", sans-serif;
+  font-size: 16px;
+  color: var(--tertiary-color);
+  box-sizing: border-box;
+  outline: none;
+}
+
+footer .input-wrapper input::placeholder {
+  color: var(--tertiary-color);
+}
+
+footer .subscribe-btn {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  bottom: 1px;
+  width: 75px;
+  background-color: #ff2194;
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+footer .subscribe-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+footer .footer-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-center .logo-container {
+  width: 150px;
+  height: 150px;
+  background-color: var(--primary-color);
+  border: 1px solid #96725c;
+  border-radius: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 5px var(--primary-color);
+}
+
+footer .footer-right p {
+  font-family: "Kangmas", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--tertiary-color);
 }
