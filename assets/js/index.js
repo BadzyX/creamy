@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const endPosition = 90;
   const step = (endPosition - startPosition) / (totalButtons - 1);
 
-  const verticalOffset = 30;
+  const verticalOffset = 60;
 
   const positions = Array.from({ length: totalButtons }, (_, index) => ({
     left: `${startPosition + step * index}%`,
