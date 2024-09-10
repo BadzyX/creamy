@@ -28,13 +28,13 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   const flavorImages = {
-    gascogne: "assets/img/carousel/elixir_de_gascogne.png",
-    vanille: "assets/img/carousel/vanille_des_iles.png",
-    cookie: "assets/img/carousel/cookie_delice.png",
-    banana: "assets/img/carousel/banana_bonanza.png",
-    mango: "assets/img/carousel/mango_tango.png",
-    cacao: "assets/img/carousel/cacao_divin.png",
-    verdure: "assets/img/carousel/verdure_givree.png",
+    gascogne: "/assets/img/carousel/elixir_de_gascogne.png",
+    vanille: "/assets/img/carousel/vanille_des_iles.png",
+    cookie: "/assets/img/carousel/cookie_delice.png",
+    banana: "/assets/img/carousel/banana_bonanza.png",
+    mango: "/assets/img/carousel/mango_tango.png",
+    cacao: "/assets/img/carousel/cacao_divin.png",
+    verdure: "/assets/img/carousel/verdure_givree.png",
   };
 
   const iceCreamImages = document.querySelectorAll(".ice-cream-image");
